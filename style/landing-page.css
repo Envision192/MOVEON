@@ -3,23 +3,138 @@
 @import "container.css";
 @import "header.css";
 @import "footer.css";
-
 .landing-page {
-    padding-top: 60px;
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-top: 88px;
 }
-@media (max-width: 1200px) {
-    .landing-page {
-
-    }
+.main {
+  color: #ffffff;
 }
-@media (max-width: 992px) {
-    .landing-page {
-
-    }
+.main__row {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1457px;
+  justify-content: space-between;
+  padding-bottom: 111px;
 }
-@media (max-width: 768px) {
-    .landing-page {
+.main-body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 560px;
+}
+.body__title {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.body__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 39px;
+}
+.body__buttons {
+  display: flex;
+  width: 100%;
+  max-width: 421px;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 53px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.button-text {
+  font-size: 17px;
+  font-weight: 700;
+  padding-left: 5px;
+}
+.main__image {
+  position: relative;
+  bottom: 111px;
+}
 
-    }
+.functional {
+	color: #000000;
+}
+.functional .container {
+}
+.func__col {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 1439px;
+	margin: 0 auto;
+	padding-bottom: 74px;
+}
+.func-top {
+	align-self: center;
+	width: 100%;
+	max-width: 424px;
+	text-align: center;
+	padding-bottom: 101px;
+}
+.top-title {
+	font-size: 46px;
+	font-weight: 500;
+	margin-bottom: 23px;
+}
+.top-subtitle {
+	font-size: 18px;
+	color: #ABABAB;
+}
+.content__row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: 74px;
+}
+.content__col {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 437px;
+}
+.item {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 437px;
+}
+.first-col .item__body {
+	text-align: right;
+	padding-right: 26px;
+}
+.second-col .item__body {
+	text-align: left;
+	padding-left: 26px;
+}
+.second-col >.item .item-image {
+	order: -1;
+}
+.body-title {
+	font-size: 22px;
+	line-height: 27px;
+}
+.body-subtitle {
+	font-size: 18px;
+	line-height: 22px;
+	color: #B0B0B0;
+}
+.round-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90px;
+	height: 90px;
+	background: linear-gradient(180deg, #8253D8 0%, #D05DDE 100%);
+	border-radius: 50%;
 }

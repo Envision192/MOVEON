@@ -18,7 +18,7 @@ template{display: none;}
 [hidden]{display: none;}
 html,body{
 	width: 100%;
-	min-height: 100vh;
+	min-height: 100%;
 	font-size: 100%;
 	line-height: 1.5;
 	-ms-text-size-adjust: 100%;
