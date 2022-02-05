@@ -31,13 +31,18 @@ body {
 .social-item:hover {
 	background-color: #8754d9;
 }
-.social-item:hover svg path {
+.header .social-item:hover svg path {
 	fill: #ffffff;
 }
+.footer .social-item svg path {
+	
+}
+	
 
 @media (max-width: 768px) {
 	.bg-inner{
 		background: url(../img/background/Path\ 194-min.png) no-repeat,
-		url(../img/background/Path\ 195-min.png) no-repeat;
+		url(../img/background/Path\ 195-min.png) no-repeat,
+		url(../img/background/footer-min.png) bottom no-repeat;
 	}
 }
