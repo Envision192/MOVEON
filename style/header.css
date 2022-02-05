@@ -3,13 +3,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 88px;
+  height: 121px;
   top: 0;
   left: 0;
   right: 0;
   font-family: Jost;
   z-index: 1070;
-  margin-bottom: 62px;
 }
 .header__row {
   display: flex;
@@ -53,4 +52,74 @@
 }
 .list-item :hover {
 	color: #D6CEE1;
+}
+.burger-menu {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.header {
+  height: 52px;
+	}
+	.header__row{
+		max-width: 337px;
+	}
+	.nav-list, .social-links {
+		display: none;
+	}
+	.burger-menu {
+  background: none;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 28px;
+  height: 28px;
+  font-size: 0;
+}
+.burger-menu span {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #ffffff;
+}
+.burger-menu span::before, .burger-menu span::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  content: "";
+}
+.burger-menu span::before {
+  top: -10px;
+}
+.burger-menu span::after {
+  bottom: -10px;
+}
+.burger-anim span::before, .burger-anim span::after {
+	transition-duration: 0.3s, 0.3s;
+	transition-delay: 0.3s, 0s;
+}
+.burger-anim span::before {
+	transition-property: top, transform;
+}
+.burger-anim span::after {
+	transition-property: bottom, transform;
+}
+.burger-anim:focus span {
+  background: none;
+}
+.burger-anim:focus span::before, .burger-anim:active span::after {
+  transition-delay: 0s, 0.3s;
+}
+.burger-anim:focus span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.burger-anim:focus span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
 }

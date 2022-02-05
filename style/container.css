@@ -19,7 +19,7 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: none;
+    max-width: 335px;
     margin: 0 15px;
   }
 }
